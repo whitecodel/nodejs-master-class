@@ -11,7 +11,7 @@ function fn_get(req, res) {
 }
 
 app.get("/", function () {
-    trturnfn_get(req, res);
+    fn_get(req, res);
 });
 
 app.post("/", function (req, res) {
