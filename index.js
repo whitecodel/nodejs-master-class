@@ -5,14 +5,12 @@ const app = express();
 app.use(express.json());
 
 // controllers
-function fn_get(req, res) {
+const fn_get = (req, res) => {
     console.log(req.query.name);
     res.send("Hello World From GET");
-}
+};
 
-app.get("/", function () {
-    fn_get(req, res);
-});
+app.get("/", fn_get);
 
 app.post("/", function (req, res) {
     console.log(req.body.name);
