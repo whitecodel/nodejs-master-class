@@ -5,10 +5,10 @@ const app = express();
 app.use(express.json());
 
 // controllers
-const fn_get = (req, res) => {
+function fn_get(req, res) {
     console.log(req.query.name);
     res.send("Hello World From GET");
-};
+}
 
 app.get("/", fn_get);
 
