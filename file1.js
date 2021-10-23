@@ -1,9 +1,5 @@
-class File1 {
-    static name = "bhawani";
-    static address = "jaipur";
-    static fun = () => {
-        console.log("fun called");
-    };
-}
+const fun = () => {
+    console.log("fun called");
+};
 
-module.exports = File1;
+module.exports = { fun };
